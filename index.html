@@ -48,22 +48,23 @@ should be expected.</p>
 <h1 class="newspaper-name">The Baker Street Bulletin</h1>
 <h2 class="newspaper-strapline">The official paper of the London working class</h2>
 </div>
-<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth"><div class="menu-box">
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth">
+  <div class="menu-box">
   <div class="menu-box-text">
-<h2>Open Menu</h2>
-</div></a>
+<h2 class="menu-box-type">Open Menu</h2>
 </div>
-
-</div>
-
-<hr class="outer-hr"></hr>
-<div class="menu-mobile">
-<a class="mobile-menu-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth">
-<h4 class="menu-strapline">Open Menu</h4>
 </a>
 </div>
 
-<hr class="outer-hr double-line"></hr>
+</div>
+
+<div class="menu-mobile">
+<hr class="outer-hr mobile-menu-hr"></hr>
+<a class="mobile-menu-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth">
+<h4 class="menu-strapline">Open Menu</h4>
+</a>
+<hr class="outer-hr double-line mobile-menu-hr"></hr>
+</div>
 
 <div class="headline-container">
 
@@ -195,7 +196,7 @@ should be expected.</p>
 </div>
 
 <div class="person-image subheadline-image">
-<img src="images/Sherlock-222.png" alt="Photo of the Late Sherlock Holmes">
+<img src="images/sherlock-222.png" alt="Photo of the Late Sherlock Holmes">
 </div>
 <h3 class="photo-caption">Sherlock Holmes in his home on 211b Baker Street</h3>
 <hr class="caption-hr"></hr>
@@ -427,6 +428,22 @@ should be expected.</p>
 </div>
 
 </div>
+
+<script>
+
+$('.menu-strapline').on('mouseover', function(){
+    $('.menu-mobile-hr').toggleClass('blocktoggle').removeClass('grouptoggle periodtoggle');
+});
+
+$('.block-button').on('click', function(){
+    $('.s-block').toggleClass('blocktoggle').removeClass('grouptoggle periodtoggle');
+});
+
+$('.block-button').on('click', function(){
+    $('.d-block').toggleClass('blocktoggle').removeClass('grouptoggle periodtoggle');
+});
+
+</script>
 
 
 

@@ -14,7 +14,18 @@ body {
 
 .menu-mobile {
   display: none;
+  transition: 250ms;
 }
+
+.menu-mobile:hover > .mobile-menu-hr {
+  border:1px solid #e23636;
+  transition: 250ms;
+}
+
+.menu-mobile:hover > .mobile-menu-link {
+  color:#e23636;
+}
+
 
 .mobile-date-hr {
   display: none;
@@ -108,6 +119,8 @@ footer a:hover {
 
 footer h4 {
   margin:0 auto;
+  line-height: 1.2em;
+  width:80%;
   display: block;
   text-align: center;
   font-family: mrs-eaves-xl-serif, serif;
@@ -1346,13 +1359,12 @@ margin-top: 0.25em;
 .mobile-menu-link {
   text-decoration: none;
   color:black;
-  transition: 150ms;
+  transition: 250ms;
 }
 
 .mobile-menu-link:hover {
 color:#e23636;
-transition: 150ms;
-text-decoration:underline;
+transition: 250ms;
 }
 
 }
@@ -1361,6 +1373,10 @@ text-decoration:underline;
 
   .container {
     width:97%;
+  }
+
+  footer h4 {
+    text-align: left ;
   }
 
   .advertisment-box {
@@ -1505,6 +1521,18 @@ margin: 0;
 .col-6 {
   grid-column: 1/7;
   border: none;
+}
+
+footer h4 {
+  margin:0 auto;
+  width:86%;
+  line-height: 1.2em;
+  display: block;
+  text-align: left ;
+  font-family: mrs-eaves-xl-serif, serif;
+  font-weight: 400;
+  font-size:0.875em;
+  margin-top: 1em;
 }
 
 .newspaper-strapline {
