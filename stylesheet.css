@@ -439,6 +439,14 @@ sup {
   margin-top:1.250em;
 }
 
+.drop-capped::first-letter {
+  font-size:225%;
+  font-weight: 700;
+  float: left;
+  line-height: 34px;
+  padding-right: 7px;
+}
+
 .article-hr {
     width:98%;
     height:0px;
