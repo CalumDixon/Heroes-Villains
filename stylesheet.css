@@ -1,6 +1,7 @@
 body {
   padding:0;
   margin: 0;
+  background-color:#fffef7;
 }
 
 *::selection {
@@ -1349,6 +1350,10 @@ width:100%;
 text-decoration: none;
 }
 
+  .outer-mobile-hr {
+    display:none;
+  }
+  
 .double-line {
   margin: 0;
   padding: 0;
