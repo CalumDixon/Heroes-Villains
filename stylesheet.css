@@ -1740,29 +1740,26 @@ margin: 0;
 .issue-info-bar h2 {
   font-family: elmhurst, serif;
   font-weight: 500;
-  font-size:1em;
+  font-size:0.75em;
   margin:0;
   padding:0;
 }
 
 .mobile-date-hr {
   border:1px solid black;
-  display: block;
+  display: none;
 }
 
 .mobile-issue-date {
   font-family: elmhurst, serif;
   font-weight: 500;
-  font-size:1em;
+  font-size:0.75em;
   margin:0 auto;
   padding:0;
   text-align: center;
-  display: block;
+  display:none;
 }
 
-.issue-date {
-  display: none;
-}
 
 .col2-hr {
   display: none;
@@ -1905,7 +1902,7 @@ margin: 0;
   }
 
   .chapter-menu-first-item {
-    margin-top: 5em;
+    margin-top: 3em;
   }
 
 }
