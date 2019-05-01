@@ -2197,6 +2197,92 @@ margin: 0;
     height:4px;
   }
 
+
+  .pre-load-container {
+    width:100%;
+    opacity: 1;
+    margin: 0;
+    padding: 0;
+    height:100%;
+    position: fixed;
+    background-color:white;
+    transition: 300ms;
+    pointer-events: none;
+    animation-delay:4s;
+    animation-duration:1s;
+    animation-fill-mode: forwards;
+    animation-name: loadingContainerFade ;
+    animation-timing-function: ease-in-out;
+  }
+
+  .pre-load-name {
+    font-family: amador, sans-serif;
+    font-size:9vw;
+    text-align: center;
+    font-weight: 400;
+    margin:0 auto;
+    padding:0;
+    margin-top: 0vh;
+  }
+
+  .pre-load-strapline {
+    font-family: mrs-eaves-xl-serif, serif;
+    font-size:4vw;
+    font-style: italic;
+    text-align: center;
+    margin: 0;
+  }
+
+  .loading-bar {
+    width:70%;
+    margin:0 auto;
+    margin-top:2.75em;
+    height:4px;
+    border-radius: 100px;
+    background-color: #D1D1D1;
+  }
+
+  .loading-text {
+    font-family: mrs-eaves-xl-serif, serif;
+    font-size:3vw;
+    font-style: italic;
+    text-align: center;
+    margin: 0;
+    margin-top:0.5em;
+  }
+
+  .loading-bar-progress {
+    width:0%;
+    margin:0;
+    z-index: 200;
+    height:4px;
+    border-radius: 100px;
+    background-color:#000000;
+    animation-delay: 1s;
+    animation-duration: 1.5s;
+    animation-name: loadingBarAniamtion ;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+  }
+
+  .pre-load-content {
+    opacity:0;
+    animation-delay:0.5s;
+    animation-duration:3s;
+    animation-name: loadingContentFade ;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+  }
+
+
+  .loading-bar {
+    height:4px;
+  }
+
+  .loading-bar-progress {
+    height:4px;
+  }
+
   .pre-load-strapline {
     font-family: mrs-eaves-xl-serif, serif;
     font-size:4vw;
