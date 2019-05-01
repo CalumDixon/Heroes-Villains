@@ -2269,7 +2269,7 @@ margin: 0;
 
 
 
-@media (max-width:375px) {
+@media screen (max-width:375px) {
 
   .close-chapter-menu {
     font-size:1em;
@@ -2293,6 +2293,43 @@ margin: 0;
     margin-top: 3em;
     margin-bottom: 3em;
     cursor: pointer;
+  }
+
+  .chapter-menu-first-item {
+    margin-top: 6em;
+  }
+
+}
+
+@media screen (max-width:375px) and (orientation:landscape)  {
+
+.chapter-menu-container {
+  background-color: gold;
+}
+
+  .close-chapter-menu {
+    font-size:1em;
+  }
+
+  .close-chapter-menu:hover {
+    color:#FF5B5B;
+    transition: 200ms;
+  }
+
+  .chapter-menu-number {
+    font-size:0.75em;
+    margin-top: 1em;
+  }
+
+  .chapter-menu-name {
+    font-size:1em;
+  }
+
+  .chapter-menu-item {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    cursor: pointer;
+    color:lime;
   }
 
   .chapter-menu-first-item {
