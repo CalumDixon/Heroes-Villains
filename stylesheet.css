@@ -2269,7 +2269,7 @@ margin: 0;
 
 
 
-@media screen (max-width:375px) {
+@media only screen (max-width:375px)  {
 
   .close-chapter-menu {
     font-size:1em;
@@ -2301,39 +2301,46 @@ margin: 0;
 
 }
 
-@media screen (max-width:375px) and (orientation:landscape)  {
 
-.chapter-menu-container {
-  background-color: gold;
-}
+/*Mobile Chapter Menu Landscape */
 
-  .close-chapter-menu {
-    font-size:1em;
-  }
 
-  .close-chapter-menu:hover {
-    color:#FF5B5B;
-    transition: 200ms;
-  }
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 823px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
 
-  .chapter-menu-number {
-    font-size:0.75em;
-    margin-top: 1em;
-  }
 
-  .chapter-menu-name {
-    font-size:1em;
-  }
+    .close-chapter-menu {
+      font-size:1em;
+    }
 
-  .chapter-menu-item {
-    margin-top: 3em;
-    margin-bottom: 3em;
-    cursor: pointer;
-    color:lime;
-  }
+    .close-chapter-menu:hover {
+      color:#FF5B5B;
+      transition: 200ms;
+    }
 
-  .chapter-menu-first-item {
-    margin-top: 6em;
+    .chapter-menu-number {
+      font-size:0.75em;
+      margin-top: 1em;
+      color:lime;
+    }
+
+    .chapter-menu-name {
+      font-size:1em;
+    }
+
+    .chapter-menu-item {
+      margin-top:2em;
+      margin-bottom: 2em;
+      cursor: pointer;
+    }
+
+    .chapter-menu-first-item {
+      margin-top: 3em;
+    }
+
   }
 
 }
