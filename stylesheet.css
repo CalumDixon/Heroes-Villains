@@ -1853,7 +1853,7 @@ transition: 250ms;
     font-weight: 400;
     margin:0 auto;
     padding:0;
-    margin-top: 40vh;
+    margin-top: 35vh;
   }
 
   .pre-load-strapline {
@@ -1939,7 +1939,7 @@ transition: 250ms;
     }
 
     .chapter-menu-first-item {
-      margin-top: 12em;
+      margin-top: 8em;
     }
 
   .container {
