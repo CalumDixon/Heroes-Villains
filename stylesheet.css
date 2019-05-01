@@ -697,84 +697,19 @@ transition: 300ms;
 
 @media (max-width:1440px) {
 
-  .chapter-menu-container {
-    width:100%;
-    margin: 0;
-    padding: 0;
-    height:100vh;
-    background-color:#1E1E1E;
-    position:fixed;
-    opacity:0;
-    z-index: -2;
-    display:hidden;
-    transition: 300ms;
-    pointer-events: none;
-  }
-
-  .chapter-menu-container.menu-toggle{
-    opacity: 1;
-    display: block;
-    z-index: 2;
-    transition: 300ms;
-    pointer-events:all;
-  }
 
   .close-chapter-menu {
-    margin:0 auto;
-    font-style: italic;
-    color:white;
-    line-height: 1.2em;
-    width:80%;
-    display: block;
-    text-align: center;
-    font-family: mrs-eaves-xl-serif, serif;
-    font-weight: 600;
     font-size:1.75em;
     margin-top: 1em;
-    transition: 200ms;
-    cursor: pointer;
-  }
-
-  .close-chapter-menu:hover {
-    color:#FF5B5B;
-    transition: 200ms;
   }
 
   .chapter-menu-number {
-    margin:0 auto;
-    font-style: italic;
-    color:white;
-    line-height: 1.2em;
-    display: block;
-    text-align: center;
-    font-family: mrs-eaves-xl-serif, serif;
-    font-weight: 600;
     font-size:1.75em;
     margin-top: 1em;
-    opacity:0.5;
   }
 
   .chapter-menu-name {
-    margin:0 auto;
-    color:white;
-    line-height: 1.2em;
-    display: block;
-    text-align: center;
-    font-family: elmhurst, serif;
-    font-weight: 600;
     font-size:2.25em;
-    transition: 200ms;
-    width:80%;
-  }
-
-  .chapter-menu-item:hover>.chapter-menu-name{
-    color:#FF5B5B;
-    transition: 200ms;
-  }
-
-  .chapter-menu-item:hover>.chapter-menu-number{
-    opacity: 1;
-    transition: 200ms;
   }
 
   .chapter-menu-item {
@@ -1224,86 +1159,21 @@ transition: 300ms;
 @media (max-width:1024px) {
 
 
-
-  .chapter-menu-container {
-    width:100%;
-    margin: 0;
-    padding: 0;
-    height:100vh;
-    background-color:#1E1E1E;
-    position: fixed;
-    opacity:0;
-    z-index: -2;
-    display:hidden;
-    transition: 300ms;
-    pointer-events: none;
-  }
-
-  .chapter-menu-container.menu-toggle{
-    opacity: 1;
-    display: block;
-    z-index: 2;
-    transition: 300ms;
-    pointer-events:all;
-  }
-
   .close-chapter-menu {
-    margin:0 auto;
-    font-style: italic;
-    color:white;
-    line-height: 1.2em;
-    width:80%;
-    display: block;
-    text-align: center;
-    font-family: mrs-eaves-xl-serif, serif;
-    font-weight: 600;
     font-size:1.5em;
     margin-top: 1em;
-    transition: 200ms;
-    cursor: pointer;
   }
 
-  .close-chapter-menu:hover {
-    color:#FF5B5B;
-    transition: 200ms;
-  }
 
   .chapter-menu-number {
-    margin:0 auto;
-    font-style: italic;
-    color:white;
-    line-height: 1.2em;
-    display: block;
-    text-align: center;
-    font-family: mrs-eaves-xl-serif, serif;
-    font-weight: 600;
     font-size:1.5em;
     margin-top: 1em;
-    opacity:0.5;
   }
 
   .chapter-menu-name {
-    margin:0 auto;
-    color:white;
-    line-height: 1.2em;
-    display: block;
-    text-align: center;
-    font-family: elmhurst, serif;
-    font-weight: 600;
     font-size:2em;
-    transition: 200ms;
-    width:80%;
   }
 
-  .chapter-menu-item:hover>.chapter-menu-name{
-    color:#FF5B5B;
-    transition: 200ms;
-  }
-
-  .chapter-menu-item:hover>.chapter-menu-number{
-    opacity: 1;
-    transition: 200ms;
-  }
 
   .chapter-menu-item {
     margin-top: 5em;
@@ -1735,85 +1605,17 @@ transition: 250ms;
 
 @media (max-width:768px) {
 
-
-    .chapter-menu-container {
-      width:100%;
-      margin: 0;
-      padding: 0;
-      height:100vh;
-      background-color:#1E1E1E;
-      position: fixed;
-      opacity:0;
-      z-index: -2;
-      display:hidden;
-      transition: 300ms;
-      pointer-events: none;
-    }
-
-    .chapter-menu-container.menu-toggle{
-      opacity: 1;
-      display: block;
-      z-index: 2;
-      transition: 300ms;
-      pointer-events:all;
-    }
-
     .close-chapter-menu {
-      margin:0 auto;
-      font-style: italic;
-      color:white;
-      line-height: 1.2em;
-      width:80%;
-      display: block;
-      text-align: center;
-      font-family: mrs-eaves-xl-serif, serif;
-      font-weight: 600;
       font-size:1.5em;
       margin-top: 1em;
-      transition: 200ms;
-      cursor: pointer;
     }
-
-    .close-chapter-menu:hover {
-      color:#FF5B5B;
-      transition: 200ms;
-    }
-
     .chapter-menu-number {
-      margin:0 auto;
-      font-style: italic;
-      color:white;
-      line-height: 1.2em;
-      display: block;
-      text-align: center;
-      font-family: mrs-eaves-xl-serif, serif;
-      font-weight: 600;
       font-size:1.5em;
       margin-top: 1em;
-      opacity:0.5;
     }
 
     .chapter-menu-name {
-      margin:0 auto;
-      color:white;
-      line-height: 1.2em;
-      display: block;
-      text-align: center;
-      font-family: elmhurst, serif;
-      font-weight: 600;
       font-size:2em;
-      transition: 200ms;
-      width:80%;
-    }
-
-    .chapter-menu-item:hover>.chapter-menu-name{
-      color:#FF5B5B;
-      transition: 200ms;
-    }
-
-    .chapter-menu-item:hover>.chapter-menu-number{
-      opacity: 1;
-      transition: 200ms;
     }
 
     .chapter-menu-item {
@@ -1825,39 +1627,6 @@ transition: 250ms;
     .chapter-menu-first-item {
       margin-top: 12em;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   .container {
     width:97%;
@@ -1943,84 +1712,19 @@ margin: 0;
 
 @media (max-width:560px) {
 
-    .chapter-menu-container {
-      width:100%;
-      margin: 0;
-      padding: 0;
-      height:100vh;
-      background-color:#1E1E1E;
-      position: fixed;
-      opacity:0;
-      z-index: -2;
-      display:hidden;
-      transition: 300ms;
-      pointer-events: none;
-    }
-
-    .chapter-menu-container.menu-toggle{
-      opacity: 1;
-      display: block;
-      z-index: 2;
-      transition: 300ms;
-      pointer-events:all;
-    }
 
     .close-chapter-menu {
-      margin:0 auto;
-      font-style: italic;
-      color:white;
-      line-height: 1.2em;
-      width:80%;
-      display: block;
-      text-align: center;
-      font-family: mrs-eaves-xl-serif, serif;
-      font-weight: 600;
       font-size:1.5em;
       margin-top: 1em;
-      transition: 200ms;
-      cursor: pointer;
-    }
-
-    .close-chapter-menu:hover {
-      color:#FF5B5B;
-      transition: 200ms;
     }
 
     .chapter-menu-number {
-      margin:0 auto;
-      font-style: italic;
-      color:white;
-      line-height: 1.2em;
-      display: block;
-      text-align: center;
-      font-family: mrs-eaves-xl-serif, serif;
-      font-weight: 600;
       font-size:1.5em;
       margin-top: 1em;
-      opacity:0.5;
     }
 
     .chapter-menu-name {
-      margin:0 auto;
-      color:white;
-      line-height: 1.2em;
-      display: block;
-      text-align: center;
-      font-family: elmhurst, serif;
-      font-weight: 600;
       font-size:1.5em;
-      transition: 200ms;
-      width:80%;
-    }
-
-    .chapter-menu-item:hover>.chapter-menu-name{
-      color:#FF5B5B;
-      transition: 200ms;
-    }
-
-    .chapter-menu-item:hover>.chapter-menu-number{
-      opacity: 1;
-      transition: 200ms;
     }
 
     .chapter-menu-item {
@@ -2032,38 +1736,6 @@ margin: 0;
     .chapter-menu-first-item {
       margin-top: 5em;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .issue-info-bar h2 {
   font-family: elmhurst, serif;
@@ -2168,5 +1840,72 @@ margin: 0;
   font-size:7.5vw;
 }
 
+
+}
+
+@media (max-width:414px) {
+
+  .close-chapter-menu {
+    font-size:1.25em;
+    margin-top: 1em;
+  }
+
+  .chapter-menu-number {
+    font-size:1em;
+    margin-top: 1em;
+  }
+
+  .chapter-menu-name {
+    font-size:1.25em;
+  }
+
+  .chapter-menu-item {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    cursor: pointer;
+  }
+
+  .chapter-menu-first-item {
+    margin-top: 8em;
+  }
+
+}
+
+
+
+
+
+
+
+
+@media (max-width:375px) {
+
+  .close-chapter-menu {
+    font-size:1.25em;
+  }
+
+  .close-chapter-menu:hover {
+    color:#FF5B5B;
+    transition: 200ms;
+  }
+
+  .chapter-menu-number {
+    font-size:1em;
+    margin-top: 1em;
+  }
+
+  .chapter-menu-name {
+    font-size:1.25em;
+  }
+
+  .chapter-menu-item {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    cursor: pointer;
+  }
+
+  .chapter-menu-first-item {
+    margin-top: 5em;
+  }
 
 }
