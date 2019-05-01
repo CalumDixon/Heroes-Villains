@@ -2509,7 +2509,6 @@ margin: 0;
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
 
-
     .close-chapter-menu {
       font-size:0.75em;
     }
@@ -2540,4 +2539,36 @@ margin: 0;
 
   }
 
-}
+
+  @media only screen
+    and (min-device-width: 768px)
+    and (max-device-width: 1024px)
+    and (orientation: landscape)  {
+
+      .close-chapter-menu {
+        font-size:1.5em;
+        margin-top: 1em;
+      }
+
+
+      .chapter-menu-number {
+        font-size:1.5em;
+        margin-top: 1em;
+      }
+
+      .chapter-menu-name {
+        font-size:2em;
+      }
+
+
+      .chapter-menu-item {
+        margin-top: 5em;
+        margin-bottom: 5em;
+        cursor: pointer;
+      }
+
+      .chapter-menu-first-item {
+        margin-top: 14em;
+      }
+
+  }
