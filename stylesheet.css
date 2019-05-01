@@ -22,7 +22,7 @@ body {
   opacity: 1;
   margin: 0;
   padding: 0;
-  height:100vh;
+  height:100%;
   position: fixed;
   background-color:white;
   transition: 300ms;
@@ -146,7 +146,7 @@ body {
   width:100%;
   margin: 0;
   padding: 0;
-  height:100vh;
+  height:100%;
   background-color:#1E1E1E;
   position: fixed;
   opacity:0;
@@ -816,7 +816,7 @@ transition: 300ms;
     opacity: 1;
     margin: 0;
     padding: 0;
-    height:100vh;
+    height:100%;
     position: fixed;
     background-color:white;
     transition: 300ms;
@@ -1819,12 +1819,21 @@ transition: 250ms;
 
 @media (max-width:768px) {
 
+  .loading-bar {
+    height:4px;
+  }
+
+  .loading-bar-progress {
+    height:4px;
+  }
+
+
   .pre-load-container {
     width:100%;
     opacity: 1;
     margin: 0;
     padding: 0;
-    height:100vh;
+    height:100%;
     position: fixed;
     background-color:white;
     transition: 300ms;
@@ -2015,6 +2024,14 @@ margin: 0;
 }
 
 @media (max-width:560px) {
+
+  .loading-bar {
+    height:4px;
+  }
+
+  .loading-bar-progress {
+    height:4px;
+  }
 
   .pre-load-strapline {
     font-family: mrs-eaves-xl-serif, serif;
