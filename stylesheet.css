@@ -165,6 +165,8 @@ display: none;
 
 
 .container {
+  margin:0;
+  padding: 0;
   width:98%;
   display: block;
   height: 20em;
@@ -1841,6 +1843,54 @@ margin: 0;
 }
 
 @media (max-width:414px) {
+
+.issue-info-bar {
+  display: none;
+}
+
+.menu-mobile h4 {
+text-align: center;
+margin: 0;
+padding: 0;
+font-family: elmhurst, serif;
+font-size: 1.25em;
+margin-bottom: 0.25em;
+margin-top: 0.25em;
+}
+
+.mobile-menu-hr {
+  margin:0;
+  padding:0;
+}
+
+.newspaper-name {
+  font-size:10.75vw;
+}
+
+.newspaper-strapline {
+font-family: mrs-eaves-xl-serif, serif;
+font-size:5vw;
+font-style: italic;
+margin: 0;
+}
+
+  .issue-date {
+    display: none;
+  }
+
+.container{
+  padding-top: 0.5em;
+}
+
+  .mobile-issue-date {
+    font-family: elmhurst, serif;
+    font-weight: 500;
+    font-size:0.75em;
+    margin:0 auto;
+    padding:0;
+    text-align: center;
+    display:block;
+  }
 
   .close-chapter-menu {
     font-size:1.25em;
