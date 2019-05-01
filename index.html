@@ -18,9 +18,38 @@
 </head>
 
 <body>
-<div class="container">
 
-<hr class="outer-hr"></hr>
+<div class="chapter-menu-container" id="chapter-menu-container">
+<!--<div class="chapter-menu-container-50check">
+</div> !-->
+<h4 class="close-chapter-menu">Close Menu</h4>
+
+<div class="chapter-menu-item chapter-menu-first-item">
+<h4 class="chapter-menu-number">Chapter 1</h4>
+<h2 class="chapter-menu-name" class="Smoothscroll"><a href="#article1">Dr. Watson Recounts of the Events</a></h2>
+
+</div>
+
+<div class="chapter-menu-item chapter-menu-second-item">
+<h4 class="chapter-menu-number">Chapter 2</h4>
+<h2 class="chapter-menu-name" class="Smoothscroll"><a href="#article2">Scene of the Crime, Reichenbach Falls</a></h2>
+</div>
+
+<div class="chapter-menu-item chapter-menu-third-item">
+<h4 class="chapter-menu-number">Chapter 3</h4>
+<h2 class="chapter-menu-name" class="Smoothscroll"><a href="#article3">Police Force Form List of Persons of Intreast</a></h2>
+</div>
+
+<div class="chapter-menu-item chapter-menu-forth-item">
+<h4 class="chapter-menu-number">Chapter 4</h4>
+<h2 class="chapter-menu-name" class="Smoothscroll"><a href="#article4">The Legacy Sherlock Holmes Left Behind</a></h2>
+</div>
+
+</div>
+
+<div class="container">
+  <div class="first-item-focus-before first-item-focus second-item-focus-before second-item-focus third-item-focus-before third-item-focus forth-item-focus-before forth-item-focus">
+<hr class="outer-hr top-page-hr"></hr>
 
 <h2 class="mobile-issue-date">London, England, Friday Morning April 23<sup>rd</sup>, 1891</h2>
 
@@ -48,12 +77,10 @@ should be expected.</p>
 <h1 class="newspaper-name">The Baker Street Bulletin</h1>
 <h2 class="newspaper-strapline">The official paper of the London working class</h2>
 </div>
-<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth">
-  <div class="menu-box">
+  <div class="menu-box" id="menu-box">
   <div class="menu-box-text">
 <h2 class="menu-box-type">Open Menu</h2>
 </div>
-</a>
 </div>
 
 </div>
@@ -62,9 +89,8 @@ should be expected.</p>
 
 <div class="menu-mobile">
 <hr class="outer-hr mobile-menu-hr"></hr>
-<a class="mobile-menu-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth">
-<h4 class="menu-strapline">Open Menu</h4>
-</a>
+<h4 class="menu-strapline mobile-menu-link">Open Menu</h4>
+
 <hr class="outer-hr double-line mobile-menu-hr"></hr>
 </div>
 
@@ -73,9 +99,10 @@ should be expected.</p>
 <h1 class="main-headline">Sherlock Holmes <span class="mobile-main-headline">Murdered</span></h1>
 </div>
 
-<div class="article-container">
+</div>
 
-<div class="col-1">
+<div class="article-container article-container-focus-border">
+<div class="col-1 first-item-focus first-item-focus-before second-item-focus second-item-focus-before third-item-focus third-item-focus-before forth-item-focus forth-item-focus-before">
 <h2 class="article-headline">Local farmer terrorised by a swan</h2>
 
 <div class="subheadline">
@@ -124,14 +151,14 @@ should be expected.</p>
 <h3 class="article-subheadline advertisment-subheadline">Only £1, half price for those suffering from consumption</h3>
 <hr class="subheadline-hr"></hr>
 </div>
-
 </div>
+
 
 <hr class="col1-hr"></hr>
 
-<div class="col-2">
+<div class="col-2 first-item-focus first-item-focus-before second-item-focus second-item-focus-before forth-item-focus forth-item-focus-before">
 
-<div class="sherlock-symbol">
+<div class="sherlock-symbol"  id="article3">
 <img src="sherlock-symbol.svg" alt="Symbol that indicates a article related to Sherlock Holmes"/>
 </div>
 <h2 class="article-headline connected-headline symbol-headline">Police Force Form List of Persons of Interest</h2>
@@ -146,7 +173,7 @@ should be expected.</p>
 <h2 class="article-headline">Dr John.H Watson</h2>
 
 <div class="person-image">
-<img src="images/watson-22.png" alt="Photo of Dr.John H Watson">
+<img src="images/watson-22.png" class="first-item-image" alt="Photo of Dr.John H Watson">
 <h3 class="photo-caption">A photo of Dr John H Watson for refrence</h3>
 <hr class="caption-hr"></hr>
 </div>
@@ -176,19 +203,22 @@ should be expected.</p>
 <p class="article-para first-para">Mycroft Holmes is Sherlock's elder brother by seven years. As the two are related the Scotland Yard have shown an interest in interviewing Mycroft, hoping that he may have undiscovered information related to the murder case of his late brother.</p>
 <h4 class="dinkus">*<span class="dinkus-space"></span>*<span class="dinkus-space"></span>*</h4>
 <p class="article-para indent-para">Upon discovering the news of his brother's death, Mycroft aburptly left his office to leave the city and mourn his loss, since then no one has been able to locate Mycroft Holmes, resulting in Scotland Yard deciding to open an investigation to find him, in hopes of uncovering new information that could aid in the finding Professor Moriarty. </p>
-
-
 </div>
+
 
 <hr class="col1-hr"></hr>
 
-<div class="col-3">
+<div class="col-3 third-item-focus third-item-focus-before forth-item-focus forth-item-focus-before">
+
+<div class="second-item-focus second-item-focus-before">
 
 <hr class="col2-hr"></hr>
 
-  <div class="sherlock-symbol">
+
+  <div class="sherlock-symbol" id="article1">
   <img src="sherlock-symbol.svg" alt="Symbol that indicates a article related to Sherlock Holmes"/>
   </div>
+
 <h2 class="article-headline connected-headline symbol-headline">Professor James Moriarty murders Sherlock Holmes</h2>
 
 <div class="subheadline">
@@ -209,7 +239,10 @@ should be expected.</p>
 <h4 class="dinkus">*<span class="dinkus-space"></span>*<span class="dinkus-space"></span>*</h4>
 <p class="article-para after-para">Eventually, we arrived at Strassburg where we were informed that the arrests had concluded but that Moriarty himself had escaped and that likely would be seeking vengeance. Sherlock had suggested that I return home for my own safety but this was out of the question, I did not want to leave my friend in his moment of need. Instead, we would  across Europe, avoiding Moriarty until we would finally arrive at Meiringen, Switzerland, where things came to an end.</p>
 
-<h2 class="article-headline connected-headline">Scene of the Crime, Reichenbach Falls</h2>
+</div>
+
+<div class="first-item-focus first-item-focus-before">
+<h2 class="article-headline connected-headline" id="article2">Scene of the Crime, Reichenbach Falls</h2>
 
 <div class="person-image">
 <img src="images/crime-scene-22.png" alt="Photo of the Late Sherlock Holmes">
@@ -226,12 +259,12 @@ should be expected.</p>
 <h3 class="article-subheadline">hiev aexwsr, m aerx xs pix csy orsa m eq epmzi fyx lezi higmhih xs viqemr mr lmhmrk yrxmp m jiip xli xmqi mw vmklx xs vixyvr.</h3>
 <hr class="subheadline-hr"></hr>
 </div>
-
+</div>
 </div>
 
 
-<div class="col-4">
-
+<div class="col-4 first-item-focus first-item-focus-before second-item-focus second-item-focus-before third-item-focus third-item-focus-before">
+  <div class="forth-item-focus forth-item-focus-before">
 <hr class="col1-hr"></hr>
 
 <hr class="col2-hr"></hr>
@@ -250,13 +283,14 @@ should be expected.</p>
   <h4 class="dinkus">*<span class="dinkus-space"></span>*<span class="dinkus-space"></span>*</h4>
   <p class="article-para indent-para">Plans to rescue the team of miners began immediately, through the assembly of a dedicated team that would work their way around the caved in section of the mine, fearing that trying to work through the collapsed rock could potentially cause further damage to the mine shaft. Through the next few days the rescue team created a tunnel towards the trapped team, eventually reaching them on the 22nd. All the miners were reported to be of good health, allowing them to return to work the following day.</p>
 
-  <hr class="article-hr"></hr>
+  <hr class="article-hr" id="article4"></hr>
+</div>
 
   <div class="sherlock-symbol mid-symbol">
   <img src="sherlock-symbol.svg" alt="Symbol that indicates a article related to Sherlock Holmes"/>
   </div>
 
-  <h2 class="article-headline symbol-headline">The legacy Sherlock Holmes left behind</h2>
+  <h2 class="article-headline symbol-headline connected-headline">The legacy Sherlock Holmes left behind</h2>
 
   <div class="subheadline">
   <hr class="subheadline-hr"></hr>
@@ -298,6 +332,7 @@ should be expected.</p>
     <li>N<span class="list-numero">o</span> 4. A Valley of Fear </li>
   </ul>
 
+<div class="forth-item-focus forth-item-focus-before">
   <hr class="article-hr"></hr>
 
   <div class="advertisment-box">
@@ -310,10 +345,10 @@ should be expected.</p>
   <h4 class="dinkus">*<span class="dinkus-space"></span>*<span class="dinkus-space"></span>*</h4>
   <p class="article-para advertisment-para after-para">Guaranteed results, easy to use, and harmless in action for both women and children.</p>
   </div>
-
+</div>
 </div>
 
-<div class="col-5">
+<div class="col-5 first-item-focus first-item-focus-before second-item-focus second-item-focus-before third-item-focus third-item-focus-before forth-item-focus forth-item-focus-before">
 
 <hr class="col1-hr"></hr>
 
@@ -367,8 +402,7 @@ should be expected.</p>
 
 </div>
 
-<div class="col-6">
-
+<div class="col-6 first-item-focus first-item-focus-before second-item-focus second-item-focus-before third-item-focus third-item-focus-before forth-item-focus forth-item-focus-before">
 <hr class="col1-hr"></hr>
 
 <hr class="col2-hr"></hr>
@@ -418,10 +452,9 @@ should be expected.</p>
   <p class="article-para first-para drop-capped">In the small village of Dogmersfield, an uproar has been started by locals after accusations were made from Lara Grant against local bakery owner Sara Anderson accusing her of performing black magic and poisoning the people of the town. Grant bases her claims on allegedly being an eyewitness to Anderson speaking to her pet black cat whom she believes to be Anderson’s familiar. </p>
   <h4 class="dinkus">*<span class="dinkus-space"></span>*<span class="dinkus-space"></span>*</h4>
   <p class="article-para indent-para last-para">Most locals ignored Grant’s calls to action against Anderson, dismissing them as absurd and ridiculous, although there is a small minority who have joined Grant in her protest. This has resulted in local authorities having to become involved in the matter after Anderson had reported that Grant and others had been watching her house at night and vandalised her property with posters telling her to leave the village. When local authorities confronted Grant regarding these claims she agreed that Anderson’s account was true but then went on to defend her actions as an act of neighbourhood protection. Shortly afterward Grant was charged with for acts of disturbing the peace and harassment, resulting in 3 months in prison.</p>
-
 </div>
 
-<footer>
+<footer class="first-item-focus first-item-focus-before second-item-focus second-item-focus-before third-item-focus third-item-focus-before forth-item-focus forth-item-focus-before">
 <h4>The Content on this website Draws from the <a href="https://bakerstreet.fandom.com/wiki/Main_Page">Baker Street Wikipedia.</a> The site is inspired by <a href="https://alistapart.com/d/responsive-web-design/ex/ex-site-flexible.html">Ethan Marcotte's Victors & Villains Website</a>, designed to illustrate his <a href="https://alistapart.com/article/responsive-web-design">seminal article on Responsive Web Design.</a></h4>
 <h4>Sherlockian Soceity List Data provided by © Randall Stock and his site <a href="https://www.bestofsherlock.com/">The Best of Sherlock Holmes & Conan Doyle</a></h4>
 <h4>Content Copyright <a href="https://www.calumdixon.com">© Calum Dixon</a> and Other Respective Owners</a></h4>
@@ -430,6 +463,124 @@ should be expected.</p>
 </div>
 
 </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="jquery-3.3.1.js"></script>
+<script src="jquery-ui.js"></script>
+<script src="smoothscroll.js"></script>
+
+<script>
+$('.menu-box-type').on('click', function(){
+    $('.chapter-menu-container').toggleClass('menu-toggle');
+});
+
+$('.close-chapter-menu').on('click', function(){
+    $('.chapter-menu-container').toggleClass('menu-toggle');
+});
+
+$('.mobile-menu-link').on('click', function(){
+    $('.chapter-menu-container').toggleClass('menu-toggle');
+});
+
+
+$('.chapter-menu-first-item').on('click', function(){
+    $('.chapter-menu-container').toggleClass('menu-toggle');
+});
+
+$('.chapter-menu-second-item').on('click', function(){
+    $('.chapter-menu-container').toggleClass('menu-toggle');
+});
+
+$('.chapter-menu-third-item').on('click', function(){
+    $('.chapter-menu-container').toggleClass('menu-toggle');
+});
+
+$('.chapter-menu-forth-item').on('click', function(){
+    $('.chapter-menu-container').toggleClass('menu-toggle');
+});
+
+</script>
+
+<script>
+
+$('.chapter-menu-first-item').on('click', function(e){
+
+    $('.article-container').css('border-color','rgba(0,0,0,0.25)');
+    $('.first-item-focus').css('opacity','0.25');
+    $('.col-3').css('border-color','rgba(0,0,0,0.25)');
+
+
+});
+
+$('.container').on('click', function(){
+
+        $('.article-container').css('border-color','rgba(0,0,0,1)');
+        $('.first-item-focus').css('opacity','1');
+        $('.col-3').css('border-color','rgba(0,0,0,1)');
+});
+
+</script>
+
+<script>
+
+$('.chapter-menu-second-item').on('click', function(e){
+
+    $('.article-container').css('border-color','rgba(0,0,0,0.25)');
+    $('.second-item-focus').css('opacity','0.25');
+    $('.col-3').css('border-color','rgba(0,0,0,0.25)');
+
+
+});
+
+$('.container').on('click', function(){
+
+        $('.article-container').css('border-color','rgba(0,0,0,1)');
+        $('.second-item-focus').css('opacity','1');
+        $('.col-3').css('border-color','rgba(0,0,0,1)');
+});
+
+</script>
+
+<script>
+
+$('.chapter-menu-third-item').on('click', function(e){
+
+    $('.article-container').css('border-color','rgba(0,0,0,0.25)');
+    $('.third-item-focus').css('opacity','0.25');
+    $('.col-2').css('border-color','rgba(0,0,0,0.25)');
+
+
+});
+
+$('.container').on('click', function(){
+
+        $('.article-container').css('border-color','rgba(0,0,0,1)');
+        $('.third-item-focus').css('opacity','1');
+        $('.col-2').css('border-color','rgba(0,0,0,1)');
+});
+
+</script>
+
+<script>
+
+$('.chapter-menu-forth-item').on('click', function(e){
+
+    $('.article-container').css('border-color','rgba(0,0,0,0.25)');
+    $('.forth-item-focus').css('opacity','0.25');
+    $('.col-4').css('border-color','rgba(0,0,0,0.25)');
+
+
+});
+
+$('.container').on('click', function(){
+
+        $('.article-container').css('border-color','rgba(0,0,0,1)');
+        $('.forth-item-focus').css('opacity','1');
+        $('.col-4').css('border-color','rgba(0,0,0,1)');
+});
+
+</script>
 
 </body>
 </html>
