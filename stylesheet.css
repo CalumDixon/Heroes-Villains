@@ -37,6 +37,7 @@ body {
   position: fixed;
   opacity:0;
   z-index: -2;
+  display:hidden;
   transition: 300ms;
   pointer-events: none;
 }
