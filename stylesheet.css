@@ -1153,7 +1153,6 @@ transition: 300ms;
 
 .connected-headline {
   margin-top:1.458em;
-  padding-
 }
 
 .symbol-headline {
@@ -1402,7 +1401,11 @@ transition: 300ms;
   }
 
   .chapter-menu-first-item {
-    margin-top: 14em;
+    margin-top: 6em;
+  }
+
+  .chapter-menu-first-item:fullscreen {
+    margin-top: 10em;
   }
 
 
