@@ -1371,6 +1371,11 @@ transition: 300ms;
   margin-bottom: 1em;
 }
 
+body {
+  background-color:gold
+}
+
+
 }
 
 @media (max-width:1336px) {
