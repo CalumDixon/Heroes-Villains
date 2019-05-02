@@ -1375,6 +1375,10 @@ transition: 300ms;
 
 @media (max-width:1336px) {
 
+  body {
+    background-color: pink;
+  }
+
   .chapter-menu-first-item {
     margin-top: 6em;
   }
