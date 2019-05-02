@@ -937,12 +937,9 @@ transition: 300ms;
   }
 
   .chapter-menu-first-item {
-    margin-top: 6em;
-  }
-
-  .chapter-menu-first-item:fullscreen {
     margin-top: 10em;
   }
+
 
 
 
@@ -1373,6 +1370,14 @@ transition: 300ms;
   margin-top: 0em;
   margin-bottom: 1em;
 }
+
+}
+
+@media (max-width:1336px) {
+
+  .chapter-menu-first-item {
+    margin-top: 6em;
+  }
 
 }
 
