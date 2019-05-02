@@ -1371,21 +1371,20 @@ transition: 300ms;
   margin-bottom: 1em;
 }
 
-body {
-  background-color:gold
 }
 
-
-}
-
-@media (max-width:1380px) {
-
-  body {
-    background-color: pink;
-  }
+@media (max-width:1440px) and (min-height:735px) {
 
   .chapter-menu-first-item {
     margin-top: 6em;
+  }
+
+}
+
+@media (max-width:1440px) and (min-height:821px) {
+
+  .chapter-menu-first-item {
+    margin-top: 10em;
   }
 
 }
