@@ -2592,13 +2592,13 @@ margin: 0;
 
 
       .chapter-menu-item {
-        margin-top: 5em;
-        margin-bottom: 5em;
+        margin-top: 3em;
+        margin-bottom: 3em;
         cursor: pointer;
       }
 
       .chapter-menu-first-item {
-        margin-top: 6em;
+        margin-top: 4em;
       }
 
       .pre-load-name {
