@@ -2615,4 +2615,13 @@ margin: 0;
         margin-top: 35vh;
       }
 
+      .pre-load-strapline {
+        font-family: mrs-eaves-xl-serif, serif;
+        font-size:8vw;
+        color:gold;
+        font-style: italic;
+        text-align: center;
+        margin: 0;
+      }
+
   }
