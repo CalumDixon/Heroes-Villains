@@ -2530,6 +2530,16 @@ margin: 0;
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
 
+    .pre-load-name {
+      font-family: amador, sans-serif;
+      font-size:9vw;
+      text-align: center;
+      font-weight: 400;
+      margin:0 auto;
+      padding:0;
+      margin-top: 25vh;
+    }
+
     .close-chapter-menu {
       font-size:0.75em;
     }
@@ -2555,7 +2565,7 @@ margin: 0;
     }
 
     .chapter-menu-first-item {
-      margin-top:1.5em;
+      margin-top:2em;
     }
 
     .loading-bar {
