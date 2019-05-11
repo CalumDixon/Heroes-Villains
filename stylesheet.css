@@ -34,6 +34,14 @@ body {
   animation-timing-function: ease-in-out;
 }
 
+.pre-load-content {
+  display: flex;
+  justify-content: center;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+}
+
 .pre-load-name {
   font-family: amador, sans-serif;
   font-size:4.5vw;
@@ -41,7 +49,6 @@ body {
   font-weight: 400;
   margin:0 auto;
   padding:0;
-  margin-top: 35vh;
 }
 
 .pre-load-strapline {
@@ -149,13 +156,18 @@ body {
   height:100%;
   background-color:#1E1E1E;
   position: fixed;
-  overflow-y: scroll;
   opacity:0;
   display: flex;
-  align-items: center;
   z-index: -2;
   transition: 300ms;
   pointer-events: none;
+}
+
+.chapter-menu-items {
+  justify-content: center;
+  height:100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .chapter-menu-container.menu-toggle{
@@ -171,13 +183,15 @@ body {
   font-style: italic;
   color:white;
   line-height: 1.2em;
-  width:80%;
+  width:100%;
   display: block;
+  position: absolute;
+  top:0;
+  margin-top: 2em;
   text-align: center;
   font-family: mrs-eaves-xl-serif, serif;
   font-weight: 600;
   font-size:1.75em;
-  margin-top: 1em;
   transition: 200ms;
   cursor: pointer;
 }
@@ -197,7 +211,7 @@ body {
   font-family: mrs-eaves-xl-serif, serif;
   font-weight: 600;
   font-size:1.75em;
-  margin-top: 1em;
+  margin-top: 0em;
   opacity:0.5;
 }
 
@@ -211,7 +225,7 @@ body {
   font-weight: 600;
   font-size:2.5em;
   transition: 200ms;
-  width:80%;
+  width:100%;
 }
 
 .chapter-menu-name a{
@@ -231,13 +245,14 @@ body {
 }
 
 .chapter-menu-item {
-  margin-top: 3em;
-  margin-bottom: 3em;
+  margin-top:4em;
+  width:100%;
+  margin-bottom:0em;
   cursor: pointer;
 }
 
 .chapter-menu-first-item {
-  margin-top: 12em;
+  margin-top: 0em;
 }
 
 
@@ -833,17 +848,16 @@ transition: 300ms;
 
   .pre-load-name {
     font-family: amador, sans-serif;
-    font-size:4.5vw;
+    font-size:5vw;
     text-align: center;
     font-weight: 400;
     margin:0 auto;
     padding:0;
-    margin-top: 35vh;
   }
 
   .pre-load-strapline {
     font-family: mrs-eaves-xl-serif, serif;
-    font-size:1.35vw;
+    font-size:1.5vw;
     font-style: italic;
     text-align: center;
     margin: 0;
@@ -852,8 +866,8 @@ transition: 300ms;
   .loading-bar {
     width:40%;
     margin:0 auto;
-    margin-top:2.75em;
-    height:6px;
+    margin-top:2em;
+    height:5px;
     border-radius: 100px;
     background-color: #D1D1D1;
   }
@@ -871,7 +885,7 @@ transition: 300ms;
     width:0%;
     margin:0;
     z-index: 200;
-    height:6px;
+    height:5px;
     border-radius: 100px;
     background-color:#000000;
     animation-delay: 1s;
@@ -902,20 +916,6 @@ transition: 300ms;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   .close-chapter-menu {
     font-size:1.75em;
     margin-top: 1em;
@@ -923,7 +923,7 @@ transition: 300ms;
 
   .chapter-menu-number {
     font-size:1.75em;
-    margin-top: 1em;
+    margin-top: 0em;
   }
 
   .chapter-menu-name {
@@ -931,14 +931,16 @@ transition: 300ms;
   }
 
   .chapter-menu-item {
-    margin-top: 3em;
-    margin-bottom: 3em;
+    margin-top:5em;
+    margin-bottom:0em;
     cursor: pointer;
   }
 
-  .chapter-menu-first-item {
-    margin-top: 10em;
+  .chapter-menu-first-item{
+    margin-top: 0em;
   }
+
+
 
 
 
@@ -1373,52 +1375,33 @@ transition: 300ms;
 
 }
 
-@media (max-width:1440px) and (min-height:735px) {
-
-  .chapter-menu-first-item {
-    margin-top: 6em;
-  }
-
-}
-
-@media (max-width:1440px) and (min-height:821px) {
-
-  .chapter-menu-first-item {
-    margin-top: 10em;
-  }
-
-}
 
 @media (max-width:1024px) {
 
   .close-chapter-menu {
-    font-size:1.5em;
-    margin-top: 1em;
+    font-size:2em;
+    margin-top: 3em;
   }
 
 
   .chapter-menu-number {
-    font-size:1.5em;
-    margin-top: 1em;
+    font-size:2em;
+    margin-top:0em;
   }
 
   .chapter-menu-name {
-    font-size:2em;
+    font-size:2.5em;
   }
 
 
   .chapter-menu-item {
-    margin-top: 5em;
-    margin-bottom: 5em;
+    margin-top:7em;
+    margin-bottom:0em;
     cursor: pointer;
   }
 
   .chapter-menu-first-item {
-    margin-top: 6em;
-  }
-
-  .chapter-menu-first-item:fullscreen {
-    margin-top: 10em;
+    margin-top: 0em;
   }
 
 
@@ -1428,7 +1411,80 @@ transition: 300ms;
 
 
 
+  .pre-load-container {
+    width:100%;
+    opacity: 1;
+    margin: 0;
+    padding: 0;
+    height:100%;
+    position: fixed;
+    background-color:white;
+    transition: 300ms;
+    pointer-events: none;
+    animation-delay:4s;
+    animation-duration:1s;
+    animation-fill-mode: forwards;
+    animation-name: loadingContainerFade ;
+    animation-timing-function: ease-in-out;
+  }
 
+  .pre-load-name {
+    font-family: amador, sans-serif;
+    font-size:7vw;
+    text-align: center;
+    font-weight: 400;
+    margin:0 auto;
+    padding:0;
+  }
+
+  .pre-load-strapline {
+    font-family: mrs-eaves-xl-serif, serif;
+    font-size:2.5vw;
+    font-style: italic;
+    text-align: center;
+    margin: 0;
+  }
+
+  .loading-bar {
+    width:60%;
+    margin:0 auto;
+    margin-top:2em;
+    height:5px;
+    border-radius: 100px;
+    background-color: #D1D1D1;
+  }
+
+  .loading-text {
+    font-family: mrs-eaves-xl-serif, serif;
+    font-size:2vw;
+    font-style: italic;
+    text-align: center;
+    margin: 0;
+    margin-top:0.5em;
+  }
+
+  .loading-bar-progress {
+    width:0%;
+    margin:0;
+    z-index: 200;
+    height:5px;
+    border-radius: 100px;
+    background-color:#000000;
+    animation-delay: 1s;
+    animation-duration: 1.5s;
+    animation-name: loadingBarAniamtion ;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+  }
+
+  .pre-load-content {
+    opacity:0;
+    animation-delay:0.5s;
+    animation-duration:3s;
+    animation-name: loadingContentFade ;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+  }
 
 
 
@@ -1841,15 +1897,6 @@ transition: 250ms;
 
 @media (max-width:768px) {
 
-  .loading-bar {
-    height:4px;
-  }
-
-  .loading-bar-progress {
-    height:4px;
-  }
-
-
   .pre-load-container {
     width:100%;
     opacity: 1;
@@ -1869,12 +1916,11 @@ transition: 250ms;
 
   .pre-load-name {
     font-family: amador, sans-serif;
-    font-size:9vw;
+    font-size:8.5vw;
     text-align: center;
     font-weight: 400;
     margin:0 auto;
     padding:0;
-    margin-top: 35vh;
   }
 
   .pre-load-strapline {
@@ -1888,8 +1934,8 @@ transition: 250ms;
   .loading-bar {
     width:70%;
     margin:0 auto;
-    margin-top:2.75em;
-    height:6px;
+    margin-top:2em;
+    height:4px;
     border-radius: 100px;
     background-color: #D1D1D1;
   }
@@ -1907,7 +1953,7 @@ transition: 250ms;
     width:0%;
     margin:0;
     z-index: 200;
-    height:6px;
+    height:4px;
     border-radius: 100px;
     background-color:#000000;
     animation-delay: 1s;
@@ -1926,41 +1972,27 @@ transition: 250ms;
     animation-timing-function: ease-in-out;
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     .close-chapter-menu {
       font-size:1.5em;
-      margin-top: 1em;
+      margin-top: 3em;
     }
     .chapter-menu-number {
       font-size:1.5em;
-      margin-top: 1em;
+      margin-top:0em;
     }
 
     .chapter-menu-name {
-      font-size:2em;
+      font-size:1.75em;
     }
 
     .chapter-menu-item {
       margin-top: 5em;
-      margin-bottom: 5em;
+      margin-bottom:0em;
       cursor: pointer;
     }
 
     .chapter-menu-first-item {
-      margin-top: 7em;
+      margin-top: 0em;
     }
 
   .container {
@@ -2080,28 +2112,30 @@ width:80%;
       padding-top: 0.25em;
     }
 
+
+
     .close-chapter-menu {
       font-size:1.5em;
-      margin-top: 1em;
+      margin-top: 3em;
     }
 
     .chapter-menu-number {
       font-size:1.5em;
-      margin-top: 1em;
+      margin-top: 0em;
     }
 
     .chapter-menu-name {
-      font-size:1.5em;
+      font-size:1.75em;
     }
 
     .chapter-menu-item {
-      margin-top: 3em;
-      margin-bottom: 3em;
+      margin-top:6em;
+      margin-bottom:0em;
       cursor: pointer;
     }
 
     .chapter-menu-first-item {
-      margin-top: 2em;
+      margin-top:0em;
     }
 
 .issue-info-bar h2 {
@@ -2243,7 +2277,6 @@ margin: 0;
     font-weight: 400;
     margin:0 auto;
     padding:0;
-    margin-top: 35vh;
   }
 
   .pre-load-strapline {
@@ -2295,14 +2328,6 @@ margin: 0;
     animation-timing-function: ease-in-out;
   }
 
-
-  .loading-bar {
-    height:4px;
-  }
-
-  .loading-bar-progress {
-    height:4px;
-  }
 
   .pre-load-strapline {
     font-family: mrs-eaves-xl-serif, serif;
@@ -2362,35 +2387,33 @@ margin: 0;
     display:block;
   }
 
+
+
   .close-chapter-menu {
     font-size:1em;
-    margin-top: 1em;
+    margin-top: 3em;
   }
 
   .chapter-menu-number {
-    font-size:1em;
+    font-size:0em;
     margin-top:0.75em;
   }
 
   .chapter-menu-name {
-    font-size:1em;
+    font-size:5em;
   }
 
   .chapter-menu-item {
-    margin-top: 3em;
-    margin-bottom: 3em;
+    margin-top:3em;
+    margin-bottom:0em;
     cursor: pointer;
   }
 
   .chapter-menu-first-item {
-    margin-top:6em;
+    margin-top:0em;
   }
 
 }
-
-
-
-
 
 
 
@@ -2399,15 +2422,6 @@ margin: 0;
   and (min-device-width: 375px)
   and (max-device-width: 667px)
   and (orientation: portrait) {
-
-
-  .loading-bar {
-    height:4px;
-  }
-
-  .loading-bar-progress {
-    height:4px;
-  }
 
 
   .pre-load-container {
@@ -2434,7 +2448,6 @@ margin: 0;
     font-weight: 400;
     margin:0 auto;
     padding:0;
-    margin-top: 35vh;
   }
 
   .pre-load-strapline {
@@ -2448,7 +2461,7 @@ margin: 0;
   .loading-bar {
     width:70%;
     margin:0 auto;
-    margin-top:2.75em;
+    margin-top:1.5em;
     height:4px;
     border-radius: 100px;
     background-color: #D1D1D1;
@@ -2491,7 +2504,8 @@ margin: 0;
 
 
   .close-chapter-menu {
-    font-size:1em;
+    font-size:1.25em;
+    margin-top: 2em;
   }
 
   .close-chapter-menu:hover {
@@ -2500,25 +2514,97 @@ margin: 0;
   }
 
   .chapter-menu-number {
-    font-size:0.75em;
-    margin-top: 1em;
+    font-size:1em;
+    margin-top:0em;
   }
 
   .chapter-menu-name {
-    font-size:1em;
+    font-size:1.25em;
+    width:70%;
   }
 
   .chapter-menu-item {
-    margin-top: 3em;
-    margin-bottom: 3em;
+    margin-top:4em;
+    margin-bottom:0em;
     cursor: pointer;
   }
 
   .chapter-menu-first-item {
-    margin-top: 5em;
+    margin-top:0em;
   }
 
 }
+
+
+
+@media only screen
+  and (min-device-width: 310px)
+  and (max-device-width: 365px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+    .loading-bar {
+      margin-top:1.25em;
+    }
+
+
+
+
+    .chapter-menu-item {
+      margin-top:2.5em;
+      margin-bottom:0em;
+      cursor: pointer;
+    }
+
+    .close-chapter-menu {
+      font-size:1em;
+      margin-top:2em;
+      font-size:1.25em;
+    }
+
+    .chapter-menu-number {
+      font-size:1em;
+      margin-top:0em;
+    }
+
+    .chapter-menu-name {
+      font-size:1.25em;
+      width:70%;
+    }
+
+    .chapter-menu-first-item {
+      margin-top:0em;
+    }
+
+}
+
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+    .chapter-menu-item {
+      margin-top:5em;
+      margin-bottom:0em;
+      cursor: pointer;
+    }
+    .close-chapter-menu {
+      font-size:1em;
+      margin-top:2em;
+      font-size:1.25em;
+    }
+    .chapter-menu-number {
+      font-size:1em;
+      margin-top:0em;
+    }
+    .chapter-menu-name {
+      font-size:1.25em;
+      width:70%;
+    }
+    .chapter-menu-first-item {
+      margin-top:0em;
+    }
+  }
 
 
 /*Mobile Chapter Menu Landscape */
@@ -2529,7 +2615,6 @@ margin: 0;
   and (max-device-width: 823px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
-
     .pre-load-name {
       font-family: amador, sans-serif;
       font-size:9vw;
@@ -2537,46 +2622,62 @@ margin: 0;
       font-weight: 400;
       margin:0 auto;
       padding:0;
-      margin-top: 20vh;
     }
-
     .close-chapter-menu {
-      font-size:0.75em;
+      font-size:1.25em;
+      margin-top: 2em;
     }
-
-    .close-chapter-menu:hover {
-      color:#FF5B5B;
-      transition: 200ms;
-    }
-
     .chapter-menu-number {
       font-size:0.75em;
       margin-top: 1em;
+      display: none;
     }
-
     .chapter-menu-name {
-      font-size:1em;
+      font-size:1.25em;
     }
-
     .chapter-menu-item {
-      margin-top:1em;
-      margin-bottom: 1em;
+      margin-top:2em;
+      margin-bottom:0em;
       cursor: pointer;
     }
-
     .chapter-menu-first-item {
-      margin-top:1.75em;
+      margin-top:0em;
     }
-
     .loading-bar {
       height:4px;
     }
-
     .loading-bar-progress {
       height:4px;
     }
-
   }
+
+  @media only screen
+    and (min-device-width: 310px)
+    and (max-device-width: 568px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: landscape) {
+      .close-chapter-menu {
+        font-size:1.25em;
+        margin-top: 2em;
+      }
+      .chapter-menu-number {
+        font-size:0.75em;
+        margin-top: 1em;
+        display: none;
+      }
+      .chapter-menu-name {
+        font-size:1.25em;
+      }
+      .chapter-menu-item {
+        margin-top:1.5em;
+        margin-bottom:0em;
+        cursor: pointer;
+      }
+      .chapter-menu-first-item {
+        margin-top:2em;
+      }
+    }
+
 
 
   @media only screen
@@ -2584,37 +2685,28 @@ margin: 0;
     and (max-device-width: 1024px)
     and (orientation: landscape)
     and (-webkit-min-device-pixel-ratio: 2) {
-
       .close-chapter-menu {
         font-size:1.5em;
         margin-top: 1em;
       }
-
-
       .chapter-menu-number {
         font-size:1.5em;
         margin-top: 1em;
       }
-
       .chapter-menu-name {
         font-size:2em;
       }
-
-
       .chapter-menu-item {
         margin-top: 3em;
         margin-bottom: 3em;
         cursor: pointer;
       }
-
       .chapter-menu-first-item {
         margin-top: 5em;
       }
-
       .pre-load-name {
         margin-top: 35vh;
       }
-
       .pre-load-strapline {
         font-family: mrs-eaves-xl-serif, serif;
         font-size:2vw;
@@ -2622,5 +2714,38 @@ margin: 0;
         text-align: center;
         margin: 0;
       }
-
   }
+
+  @media only screen
+and (min-device-width: 375px)
+and (max-device-width: 825px)
+and (-webkit-min-device-pixel-ratio: 3)
+and (orientation: landscape) {
+  .close-chapter-menu {
+    font-size:1.5em;
+    margin-top: 2em;
+  }
+  .chapter-menu-number {
+    display: none;
+  }
+  .chapter-menu-name {
+    font-size:1.5em;
+  }
+  .chapter-menu-item {
+    margin-top:2em;
+    margin-bottom: 0em;
+  }
+  .chapter-menu-first-item {
+    margin-top: 2em;
+  }
+  .pre-load-name {
+    margin-top: 35vh;
+  }
+  .pre-load-strapline {
+    font-family: mrs-eaves-xl-serif, serif;
+    font-size:2vw;
+    font-style: italic;
+    text-align: center;
+    margin: 0;
+  }
+}
